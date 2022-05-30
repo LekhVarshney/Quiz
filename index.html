@@ -1,0 +1,370 @@
+<HTML>
+<HEAD>
+<TITLE>
+Quiz on Garbage in,Garbage out 
+</TITLE>
+</Head>
+<body>
+<center></h1><b><P>GARBAGE IN ,GARBAGE OUT</p></h1></b></center>
+<h2><p><br>Quiz time</h2></p>
+<Body> 
+<h3><b><p>James</P></b></h3>
+<p>Hello joy how are you</P>
+<h3><b><p>Joy</P></b></h3>
+<p>Hello james I am fine</P>
+<h3><b><p>James</P></b></h3>
+<p>Did you know joy that if you write in chat box anthing it will always goes to emoji website</P>
+<h3><b><p>joy</P></b></h3>
+<p>Yes I know that james<p>
+
+<button onclick="typeWriter()">Instruction</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = '1.Learn the chapter Garbage in ,Garbage out of science 2. Do the quiz 3. Do the quiz in 5 min 4. At last mouseover the veiw answer';
+var speed = 60;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="file:///C:/Users/Toshiba/Desktop/class%206%20vansh%20folder/All%20folders/Projects/HTML/emoji.HTML" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<h3><P>Q-1 When was Swachh Bharat Mission(SBM) launched</p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">18 october</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">3 october</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">2 october</label><BR>
+  <input type="checkbox" id="1 october" name="1 october" value="1 october">
+  <label for="vehicle1">1 october</label><hr>
+
+<h3><P>Q-2 Who collect garbage?</p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">Safai Karamcharis</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">truck</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">car</label><hr>
+
+<h3><P>Q-3 From where non - useful component is seperated out?</p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">Landfill</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">Garbage bag</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">park</label><hr>
+
+
+<h3><P>Q-4 The green bins are used for collecting ________,______ or _______</p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">Kitchen , other plants and paper</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">Kitchen , other plants and biodegradable plastic</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">Kitchen , other plants and animal wastes</label><hr>
+
+<h3><P>Q-5 The blue bins are used for collecting ________,______ or _______</p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">Kitchen , other plants and paper</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">Plastic,metals and glass</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">Kitchen , other plants and animal wastes</label><hr>
+
+<h3><P>Q-6 who is the friend of farmers</p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">vermicomposting</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">Plastic,metals and glass</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">Redworms</label><hr>
+
+<h3><P>Q-7 The method of making compost is called?</p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">Redworms</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">vermicomposting</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">composting</label><hr>
+
+<h3><P>Q-8 A redworm can eat food equal to its own _________</p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">weight in a month</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">weight in a day</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">weight in a year</label><hr>
+
+<h3><P>Q-9 Red have teeth? </p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">true</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">false</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">non of the above</label><hr>
+
+<h3><P>Q-10 Red worms do not have teeth they have? </p></h3>
+<input type="checkbox" id="18 oct" name="18 oct" value="18 oct">
+  <label for="vehicle1">Gizzard</label><br>
+  <input type="checkbox" id="3 october" name="3 october" value="3 october">
+  <label for="vehicle2">legs</label><br>
+  <input type="checkbox" id="2 october" name="2 october" value="2 october">
+  <label for="vehicle3">non of the above</label><hr>
+<script>
+	<!--
+	function mouseoverevent()
+	{
+		alert("Answer of all questions is 1c , 2a , 3a , 4c , 5c , 6c , 7b , 8b , 9b , 10a , ");
+	}
+	//-->
+
+</script>
+<p onmouseover="mouseoverevent()">view answers </p>
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+<div class="mySlides">
+  <q>Thank you</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</Body>
+</HTML>
